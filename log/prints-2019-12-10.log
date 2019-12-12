@@ -1,0 +1,7 @@
+15:34:31.937 [main] INFO  resources.base - Navigated to the Home Page
+15:34:34.338 [main] INFO  resources.base - Successfully validated Text message
+15:34:54.121 [main] INFO  resources.base - Successfully validated the link
+15:35:03.895 [main] INFO  resources.base - Successfully validated the link
+15:35:21.385 [main] INFO  resources.base - Successfully validated the display
+15:36:18.904 [main] INFO  resources.base - Driver is initizlized
+15:36:22.930 [main] INFO  resources.base - Navigated to the Home Page
