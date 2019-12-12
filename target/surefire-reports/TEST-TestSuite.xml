@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="68.017" tests="4" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="71.619" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
     <property name="java.vm.version" value="25.221-b11"/>
+    <property name="browser" value="chrome"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\SAURABH IT\maven-archetype-quickstart"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -45,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_221\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dbrowser=chrome"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -64,19 +65,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="basePageNavigation" classname="Academy.ValidateTitle" time="10.766">
-    <failure message="expected [FEATURED COURSES12] but found [FEATURED COURSES]" type="java.lang.AssertionError">java.lang.AssertionError: expected [FEATURED COURSES12] but found [FEATURED COURSES]
-	at Academy.ValidateTitle.basePageNavigation(ValidateTitle.java:34)
-</failure>
-    <system-out><![CDATA[chrome
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 8022
-Only local connections are allowed.
-Dec 12, 2019 11:17:14 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-]]></system-err>
-  </testcase>
-  <testcase name="basePageNavigation" classname="Academy.HomePage" time="15.408"/>
-  <testcase name="basePageNavigation" classname="Academy.HomePage" time="7.303"/>
-  <testcase name="basePageNavigation" classname="Academy.ValidateNavigation" time="12.42"/>
+  <testcase name="basePageNavigation" classname="Academy.ValidateTitle" time="14.02"/>
+  <testcase name="basePageNavigation" classname="Academy.HomePage" time="17.606"/>
+  <testcase name="basePageNavigation" classname="Academy.HomePage" time="9.253"/>
+  <testcase name="basePageNavigation" classname="Academy.ValidateNavigation" time="11.18"/>
 </testsuite>
