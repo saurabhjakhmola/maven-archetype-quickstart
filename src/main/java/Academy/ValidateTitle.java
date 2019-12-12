@@ -31,7 +31,7 @@ public class ValidateTitle extends base {
 
 		l.getTitle().getText();
 		// compare the text from browser from actual text. - Error--
-		Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES12");
+		Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES");
 		Log.info("Successfully validated Text message");
 
 	}
