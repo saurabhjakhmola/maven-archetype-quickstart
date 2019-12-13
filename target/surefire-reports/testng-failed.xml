@@ -4,36 +4,15 @@
   <listeners>
     <listener class-name="Academy.listeners"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="Test(failed)">
-    <classes>
-      <class name="Academy.ValidateTitle">
-        <methods>
-          <include name="basePageNavigation"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- Academy.ValidateTitle -->
-    </classes>
-  </test> <!-- Test(failed) -->
   <test thread-count="5" verbose="0" name="Validating user login(failed)">
     <classes>
       <class name="Academy.HomePage">
         <methods>
-          <include name="basePageNavigation"/>
+          <include name="basePageNavigation" invocation-numbers="0 1"/>
           <include name="initialize"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- Academy.HomePage -->
     </classes>
   </test> <!-- Validating user login(failed) -->
-  <test thread-count="5" verbose="0" name="Validating navigation bar(failed)">
-    <classes>
-      <class name="Academy.ValidateNavigation">
-        <methods>
-          <include name="teardown"/>
-          <include name="initialize"/>
-          <include name="basePageNavigation"/>
-        </methods>
-      </class> <!-- Academy.ValidateNavigation -->
-    </classes>
-  </test> <!-- Validating navigation bar(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -8,12 +8,12 @@ public class Landingpage {
 	
 	public WebDriver driver;
 	
-	By LoginButton = By.xpath("//span[contains(text(),'Login')]");
-	By Username = By.xpath("//input[@id='user_email']");
-	By Password = By.xpath("//input[@id='user_password']");
-	By Login = By.xpath("//input[@id='user_password']");
-	By Title = By.xpath("//h2[contains(text(),'Featured Courses')]");
-	By NavBar = By.xpath("//a[contains(text(),'Contact')]");
+ private	By LoginButton = By.xpath("//span[contains(text(),'Login')]");
+ private	By Username = By.xpath("//input[@id='user_email']");
+ private	By Password = By.xpath("//input[@id='user_password']");
+ private 	By Login = By.xpath("//input[@id='user_password']");
+ private	By Title = By.xpath("//h2[contains(text(),'Featured Courses')]");
+ private	By NavBar = By.xpath("//a[contains(text(),'Contact')]");
 	
 
 	

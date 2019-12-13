@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 public class LoginPage {
 public WebDriver driver;
 	
-	By Username = By.xpath("//input[@id='user_email']");
-	By Password = By.xpath("//input[@id='user_password']");
-	By Login = By.xpath("//input[@name='commit']");
+	private By Username = By.xpath("//input[@id='user_email']");
+	private By Password = By.xpath("//input[@id='user_password']");
+	private By Login = By.xpath("//input[@name='commit']");
 	
 	
 	public LoginPage(WebDriver driver) {

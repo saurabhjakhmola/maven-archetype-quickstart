@@ -1,4 +1,7 @@
-17:11:37.389 [main] INFO  resources.base - Successfully validated Text message
-17:12:02.827 [main] INFO  resources.base - Successfully validated the link
-17:12:12.082 [main] INFO  resources.base - Successfully validated the link
-17:12:32.450 [main] INFO  resources.base - Successfully validated the display
+14:34:08.230 [main] INFO  resources.base - Successfully validated the display
+14:34:27.397 [main] INFO  resources.base - Driver is initizlized
+14:34:33.186 [main] INFO  resources.base - Navigated to the Home Page
+14:34:35.522 [main] INFO  resources.base - Successfully validated Text message
+14:35:06.385 [main] INFO  resources.base - Successfully validated the link
+14:35:18.451 [main] INFO  resources.base - Successfully validated the link
+14:35:53.775 [main] INFO  resources.base - Successfully validated the display

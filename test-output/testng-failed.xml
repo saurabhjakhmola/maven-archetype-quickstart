@@ -4,14 +4,15 @@
   <listeners>
     <listener class-name="Academy.listeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Validating user login(failed)">
     <classes>
-      <class name="Academy.ValidateTitle">
+      <class name="Academy.HomePage">
         <methods>
-          <include name="basePageNavigation"/>
+          <include name="basePageNavigation" invocation-numbers="1"/>
+          <include name="initialize"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- Academy.ValidateTitle -->
+      </class> <!-- Academy.HomePage -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Validating user login(failed) -->
 </suite> <!-- Failed suite [Suite] -->

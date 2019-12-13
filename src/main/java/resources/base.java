@@ -10,6 +10,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
 
@@ -19,19 +20,25 @@ public class base {
 	public WebDriver initializeDriver() throws IOException
 	{
 		 prop=new Properties();
-		FileInputStream fis=new FileInputStream("C:\\Users\\SAURABH IT\\maven-archetype-quickstart\\src\\main\\java\\resources\\data.properties");
+		 //System.getProperty("user.dir")
+		FileInputStream fis=new FileInputStream( System.getProperty("user.dir") + "\\src\\main\\java\\resources\\data.properties");
 		
 		prop.load(fis);
 		//prop.getProperty("browser");
-		//String browserName=prop.getProperty("browser");
-		String browserName=System.getProperty("browser");
+		String browserName=prop.getProperty("browser");
+		//String browserName=System.getProperty("browser");
 		System.out.println(browserName);
 		
 		
-		if(browserName.equals("chrome"))
+		if(browserName.contains("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-			driver = new ChromeDriver();
+			ChromeOptions options =new ChromeOptions();
+			if(browserName.contains("headless"))
+			{
+				options.addArguments("headless");
+			}
+			driver = new ChromeDriver(options);
 			//execute in the chrome driver
 		}
 		else if (browserName.equals("firefox"))
