@@ -25,8 +25,8 @@ public class base {
 		
 		prop.load(fis);
 		//prop.getProperty("browser");
-		String browserName=prop.getProperty("browser");
-		//String browserName=System.getProperty("browser");
+		//String browserName=prop.getProperty("browser");
+		String browserName=System.getProperty("browser");
 		System.out.println(browserName);
 		
 		
